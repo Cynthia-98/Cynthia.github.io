@@ -1,0 +1,141 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Sep 6, 2022, 7:52:48 PM
+    Author     : cynthiamatuba
+    St No      : c20463
+*/
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to bottom right, #FF6868, #FF68DE);
+
+}
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: mintcream;
+    border-radius: 5px;
+    padding: 25px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.wrapper.inputField{
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    width: 80%;
+    margin: 20px 0;
+    margin-left: 5px;
+    
+    
+}
+.inputField input{
+outline: none;
+width: 80%;
+height: 45px;
+border: 1px solid #c07070;
+font-size: 17px;
+border-radius: 3px;
+padding:0 15px;
+margin-bottom: 8px;
+
+}
+
+.inputField button{
+    width: 60px;
+    height:45px;
+    border: none;
+    background:#FBC2EB;
+    color: azure;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding:0 15px;
+    opacity: o,6;
+    pointer-events: none;
+}
+.inputField input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+    max-height: 200px;
+    overflow-y: auto;
+
+}
+.todoList li{
+ list-style: none;
+ width: 100%;
+height : 45px;
+line-height: 45px;
+position: relative;
+background: rgb(252, 187, 227);
+border-radius: 3px;
+margin-bottom: 8px;
+padding: 0 15px;
+margin-left: 5px;
+}
+.todoList li span{
+    position: absolute;
+    right: -5px;
+    color: #FBC2EB;
+    width: 45px;
+    text-align: center;
+    background:#FBC2EB;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  
+
+}
+.todoList li span button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background:#FBC2EB;
+    color: azure;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding:0 15px;
+    transition:  all 0.3s ease;
+
+}
+.todoList li :hover span {
+    right: 10px;
+    color:azure;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    border: none;
+    outline: none;
+    background: #FBC2EB;
+    color: azure;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+
+}
+
